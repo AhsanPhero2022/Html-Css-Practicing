@@ -26,7 +26,7 @@
 
   <body>
     <header>
-      <nav class="navbar container navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar  container navbar-expand-lg navbar-light bg-info rounded">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="images/logo2.png" alt="">
@@ -35,28 +35,67 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav m-auto mb-2 gap-5 mb-lg-0">
+            <ul class="navbar-nav m-auto mb-2 gap-5 mb-lg-0 " >
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#">Home
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Services</a>
+                <a class="nav-link active" href="#">Services
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Cases</a>
+                <a class="nav-link active" href="#">Cases
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Blog</a>
+                <a class="nav-link active" href="#">Blog
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Contact Us</a>
+                <a class="nav-link active" href="#">Contact Us
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
               </li>
             </ul>
-            <button class="btn btn-info">Free Consultation</button>
+            <button type="button" class="btn btn-warning text-info fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Free Consultation
+            </button>
           </div>
         </div>
       </nav>
       <!-- Nav end here -->
+
+      
+      <!-- modal section -->
+      <section>
+        <!-- Button trigger modal -->
+      
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">SignUp First</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body bg-info">
+              <input class="w-100 p-2 my-3 border-0 rounded" type="email" placeholder="Your Email">
+              <input class="w-100 p-2 border-0 rounded" type="password" placeholder="Your Password">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Login</button>
+              <button type="button" class="btn btn-primary">SignUp</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
 
       <!-- Banner start here -->
       <section>
@@ -300,43 +339,51 @@
 
 
     <!-- footer start -->
-    <footer>
-     <div class="container">
-      <div class="row ms-5">
-        <div class="col-12 col-md-3">
-          <h5>
-            <img src="images/logo.png" alt="">
-            <p><small>Explain why someone should contact your business. Describe how your business can help solve the visitors' problems. Include an email and phone number so visitors can get in touch with you on their first attempt.</small></p>
-          </h5>
-        </div>
-        <div class="col-12 col-md-3">
-          <h5>Usefull Link</h5>
-          <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Corses</li>
-            <li>Blog</li>
-            <li>Contact Us</li>
-          </ul>
-        </div>
-        <div class="col-12 col-md-3">
-          <h5>Contact Now</h5>
-          <p>555 4th 5t NW, Washington<br>DC 20530, United States</p>
-          <p>+88 01750 000 000<br>+88 01750 000 000</p>
-          <p>info@gmail.com<br>info@gmail.com</p>
-        </div>
-        <div class="col-12 col-md-3">
-          <h5>Subscribe</h5>
-          <p>Subscribe for our latest & Articles. We Won’t Give You Spam Mails</p>
-          <button>
-            <input type="text">
-            btn</button>
-        </div>
-        <div class="col-12 col-md-3">
-
+    <footer class="bg-dark mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-3 p-3">
+            <h5>
+              <img class="w-75 h-50 bg-info rounded" src="images/logo.png" alt="">
+            </h5>
+              <p class="p-1 text-info">Subscribe to a knowledge article within a knowledge base to receive email notifications about new articles and article revisions or comments.</p>
+            
+          </div>
+          <div class="col-12 col-md-3 p-3 text-info">
+            <h5 class="p-1">Usefull Link</h5>
+            <ul class="list-unstyled text-info">
+              <li class="p-1">Home</li>
+              <li class="p-1">About</li>
+              <li class="p-1">Corses</li>
+              <li class="p-1">Blog</li>
+              <li class="p-1">Contact Us</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-3 p-3 text-info">
+            <h5 class="p-1">Contact Now</h5>
+            <p>555 4th 5t NW, Washington<br>
+              DC 20530, United States</p>
+              <p>+88 01750 000 000<br>
+                +88 01750 000 000</p>
+              <p>info@gmail.com<br>
+                info@gmail.com</p>
+          </div>
+          <div class="col-12 col-md-3 p-3 text-info">
+            <h5 class="p-1">Subscribe</h5>
+            <p>Subscribe to a knowledge article within a knowledge base to receive email notification.</p>
+            
+            <div class="d-flex gap-2">
+              <input class="p-2 rounded border-0" type="text" placeholder="Email Address">
+              <button
+               class="btn btn-info ">
+              <img class="" src="images/message.png" alt="">
+            </button>
+            </div>
+            
+          </div>
+          
         </div>
       </div>
-     </div>
     </footer>
 
 
